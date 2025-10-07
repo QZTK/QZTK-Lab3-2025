@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ejercicio de Laboratorio 3 PEyLW 2025 - CURZAS">
+    <meta name="author" content="Raúl Francisco Amelong">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Raúl Francisco Amelong</title>
+</head>
+<body>
+    <header id="inicio">
+        <h1>Raúl Francisco Amelong (Página personal)</h1>
+    </header>
+        <nav class="menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li> 
+          <li><a href="acercade.html">Acerca de</a></li>
+          <li><a href="https://web.curza.uncoma.edu.ar">Página del CURZAS</a></li>
+        </ul>
+        </nav>
+    <h2>Tecnicatura Superior en Desarrollo de Aplicaciones Web</h2> 
+    <h3>Programación Estática y Laboratorio Web - 2025</h3>
+    <h4>Contacto</h4>
+    <form action="/Proximamente_Solo_En_Cines">
+        <label class="items" for="nombre">Nombre: (requerido)</label><br>
+        <input type="text" id="nombre" name="nombre" maxlength="20" required><br>
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" maxlength="20"><br>
+        <label for="email">E-mail: (requerido)</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su teléfono"><br>
+        <label for="edad">Edad:</label><br>
+        <input type="number" id="edad" name="edad" min="16" max="120"><br>
+        <label for="direccion">Dirección:</label><br>
+        <textarea name="direccion" id="direccion" rows="10" cols="20"></textarea><br>
+        <label for="inputProvincia">Provincia:</label><br>
+        <input list="datalistProvincia" name="provincia" id="inputProvincia">
+            <datalist id="datalistProvincia">
+            <option value="Antartida">
+            <option value="Buenos Aires">
+            <option value="Catamarca">
+            <option value="Chaco">
+            <option value="Chubut">
+            <option value="Ciudad Autónoma de Buenos Aires">
+            <option value="Córdoba">
+            <option value="Corrientes">
+            <option value="Entre Ríos">
+            <option value="Formosa">
+            <option value="Jujuy">
+            <option value="La Pampa">
+            <option value="La Rioja">
+            <option value="Mendoza">
+            <option value="Misiones">
+            <option value="Neuquén">
+            <option value="Salta">
+            <option value="San Juan">
+            <option value="San Luis">
+            <option value="Santa Cruz">
+            <option value="Santa Fe">
+            <option value="Santiago del Estero">
+            <option value="Río Negro">
+            <option value="Tierra del Fuego">
+            <option value="Tucumán">
+            </datalist><br>
+        <label for="cp">Código Postal:</label><br>
+        <input type="text" id="cp" name="cp" pattern="[A-Z]{1}[0-9]{4}[A-Z]{3}"><br>
+            <h5>Método preferido de contacto</h5>
+            <input type="radio" id="correo_e" name="contactopref" value="Correo Electrónico" checked>
+            <label for="correo_e">Correo Electrónico</label>
+            <input type="radio" id="correo_p" name="contactopref" value="Correo Postal">
+            <label for="correo_p">Correo Postal</label>
+            <input type="radio" id="telef" name="contactopref" value="Teléfono">
+            <label for="telef">Teléfono</label>
+            <h5>Tipo de suscripción</h5>
+            <input type="checkbox" id="noticias" name="noticias" value="Noticias">
+            <label for="noticias"> Noticias</label>
+            <input type="checkbox" id="promociones" name="promociones" value="Promociones">
+            <label for="promociones"> Promociones</label>
+            <input type="checkbox" id="alertas" name="alertas" value="Alertas" checked>
+            <label for="alertas"> Alertas</label>
+            <input type="checkbox" id="eventos" name="eventos" value="Eventos">
+            <label for="eventos"> Eventos</label><br>
+        <input type="submit" value="Cargar"><br>
+    </form>
+        <table style="width:20%">
+        <thead>
+        <tr>
+            <th>Campo</th>
+            <th>Valor</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Nombre</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Apellido</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Teléfono</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Edad</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Dirección</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Provincia</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Código Postal</td>
+            <td></td>
+        </tr>
+        </tbody>
+        </table>
+    <footer id="piepagina">
+        <p>&copy; Amelong Raúl Francisco - Todos los derechos y algunos izquierdos reservados</p>
+        <address>
+            <p>
+            CURZAS<br>
+            Monseñor Esandi y Ayacucho s/n<br>
+            CP 8500 - Viedma<br>
+            Universidad del Comahue <br>
+            </p>
+        </address>
+    </footer>
+</body>
+</html>
